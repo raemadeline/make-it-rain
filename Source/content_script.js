@@ -10,11 +10,11 @@ height = $(document).height()
 canvas = $('<canvas class="rain"></canvas>')
 canvas.attr('width', width)
 canvas.attr('height', height)
-canvas.appendTo('body')
+canvas.appendTo('html')
 initAnimation()
 
 function initAnimation() {
-  numMoney = 3//300
+  numMoney = 300
   speedOffset = 10
   speedRange = 5
   numImages = 6
@@ -44,7 +44,6 @@ function initAnimation() {
 
     imageIndex = _random(numImages)
     imagePath = "images/money_" + imageIndex + ".png"
-    debugger
     imageURL = chrome.extension.getURL(imagePath);
     money.image.src = imageURL
     fallingMoney.push(money)
@@ -86,6 +85,7 @@ function drawRotatedImage(money) {
 }
 
 function endAnimation() {
+  debugger
   clearInterval(interval)
   fallingMoney = []
   canvas.detach()
