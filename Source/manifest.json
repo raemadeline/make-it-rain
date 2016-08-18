@@ -1,7 +1,7 @@
 {
   "name": "Make It Rain",
   "description": "Make It Rain",
-  "author": "Maddie Horowitz",
+  "author": "Madeline Rae Horowitz",
   "version": "1.0",
   "permissions": [
     "activeTab"
@@ -11,7 +11,14 @@
     "default_icon": {
       "19": "images/icon_xs.png",
       "38": "images/icon_small.png"
-    },
+    }
   },
-  "manifest_version": 1
+  "web_accessible_resources": [
+    "images/*.png",
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "manifest_version": 2
 }
