@@ -2,7 +2,7 @@
   "name": "Make It Rain",
   "description": "Make It Rain",
   "author": "Madeline Rae Horowitz",
-  "version": "1.0",
+  "version": "0.0.0.1",
   "permissions": [
     "activeTab"
   ],
