@@ -14,7 +14,7 @@ canvas.appendTo('html')
 initAnimation()
 
 function initAnimation() {
-  numMoney = 300
+  numMoney = 1000
   speedOffset = 10
   speedRange = 5
   numImages = 6
